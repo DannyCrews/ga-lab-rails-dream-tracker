@@ -1,0 +1,12 @@
+<h1>All Dreams</h1>
+<div class="dream">
+	<% @dreams.each do |dream| %>
+		<h3><%= link_to dream.date, dream %></h3>
+		<%= link_to "edit dream", edit_dream_path(dream) %>
+		<%= link_to "destroy dream", dream, method: :delete, data: { confirm: "Fugedda bout it!"} %>
+		<div>Dream Description: <%= dream.description %></div>
+	<% end %>
+</div>
+
+<br />
+<%= link_to "New Dream", new_dream_path %>

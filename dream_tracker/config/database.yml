@@ -1,0 +1,16 @@
+#
+development:
+  hostname: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: dream_tracker_development
+  pool: 5
+
+
+test:
+  hostname: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: dream_tracker_test
+  pool: 5
+
